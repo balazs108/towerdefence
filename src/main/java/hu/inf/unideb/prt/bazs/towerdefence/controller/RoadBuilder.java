@@ -75,6 +75,10 @@ public class RoadBuilder {
         return this;
     }
 
+    /**
+     * Builder method that converts the RoadBuilder into a road.
+     * @return the road.
+     */
     public Road build() {
         logger.info("The road is finished.");
         return road;

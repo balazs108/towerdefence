@@ -1,15 +1,41 @@
 package hu.inf.unideb.prt.bazs.towerdefence.model;
 
 /**
- * Created by Balazs on 2017-05-20.
+ * Tower class, these are objects that can be placed on the field, and will try to "kill" mobs near them.
  */
 public class Tower {
+    /**
+     * The type of the tower.
+     */
     private TowerType towerType;
+    /**
+     * The state of reload. If it's below or on zero than the tower can fire.
+     */
     private int reloadState;
-    private int x,y;
+    /**
+     * The x coordinate of the tower.
+     */
+    private int x;
+    /**
+     * The y coordinate of the tower.
+     */
+    private int y;
+    /**
+     * A mob object that is the towers target.
+     */
     private Mob target;
+    /**
+     * A bool value that determines if the tower is shooting at the moment or nor, this enables the drawing of the
+     * towers projectile between him and its target.
+     */
     private boolean shooting;
 
+    /**
+     * Constructor method, creates a tower.
+     * @param towerType the new towers type.
+     * @param x the x coordinate of the new tower.
+     * @param y the y coodrinate of the new tower.
+     */
     public Tower(TowerType towerType, int x, int y) {
         this.towerType = towerType;
         this.x = x;
@@ -18,10 +44,11 @@ public class Tower {
         shooting = false;
     }
 
-    public TowerType getTowerType() {
-        return towerType;
-    }
-
+    /**
+     * This method is responsible for the tower shooting at its target.
+     * If the towers reloadstate is below or on zero and it has a target, then it will shoot at it,
+     * and as a result the mobs health will be decreased by the towers damage.
+     */
     public void shoot() {
         if(reloadState <= 0 && target != null) {
             target.damageHealth(towerType.getDamage());
@@ -34,47 +61,51 @@ public class Tower {
 
     }
 
-    public void setTowerType(TowerType towerType) {
-        this.towerType = towerType;
+    /**
+     * Getter method for the towertype.
+     * @return the towertype.
+     */
+    public TowerType getTowerType() {
+        return towerType;
     }
 
-    public int getReloadState() {
-        return reloadState;
-    }
-
-    public void setReloadState(int reloadState) {
-        this.reloadState = reloadState;
-    }
-
+    /**
+     * Getter method for the towers x coordinate.
+     * @return the x coordinate.
+     */
     public int getX() {
         return x;
     }
-
-    public void setX(int x) {
-        this.x = x;
-    }
-
+    /**
+     * Getter method for the towers y coordinate.
+     * @return the y coordinate.
+     */
     public int getY() {
         return y;
     }
-
-    public void setY(int y) {
-        this.y = y;
-    }
-
+    /**
+     * Getter method for the towers target.
+     * @return the target.
+     */
     public Mob getTarget() {
         return target;
     }
 
+    /**
+     * Setter method for the target.
+     * @param target the new target.
+     */
     public void setTarget(Mob target) {
         this.target = target;
     }
 
+    /**
+     * Getter method for the shooting.
+     * @return the value of shooting.
+     */
     public boolean isShooting() {
         return shooting;
     }
 
-    public void setShooting(boolean shooting) {
-        this.shooting = shooting;
-    }
+
 }

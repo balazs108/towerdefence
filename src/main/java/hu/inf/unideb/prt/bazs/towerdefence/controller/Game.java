@@ -192,70 +192,107 @@ public class Game {
         }
     }
 
+
+    /**
+     * Getter method for the field.
+     * @return the field.
+     */
     public Field getField() {
         return field;
     }
 
-    public void setField(Field field) {
-        this.field = field;
-    }
-
+    /**
+     * Getter method for the mobList.
+     * @return the mobList.
+     */
     public List<Mob> getMobs() {
         return mobs;
     }
 
+    /**
+     * Setter method for the mobList.
+     * @param mobs mobList.
+     */
     public void setMobs(List<Mob> mobs) {
         this.mobs = mobs;
     }
 
+    /**
+     * Getter method for the gold.
+     * @return the gold.
+     */
     public int getGold() {
         return gold;
     }
 
+    /**
+     * Update method for the gold.
+     * @param gold the value which the gold will be increased.
+     */
     public void updateGold(int gold) {
         this.gold += gold;
     }
 
+    /**
+     * Getter method for the life.
+     * @return the life.
+     */
     public int getLife() {
         return life;
     }
 
+    /**
+     * Setter method for the life.
+     * @param life the new life.
+     */
     public void setLife(int life) {
         this.life = life;
     }
 
+    /**
+     * Getter method for the score.
+     * @return the score.
+     */
     public int getScore() {
         return score;
     }
 
+    /**
+     * Setter method for the score.
+     * @param score the new score.
+     */
     public void setScore(int score) {
         this.score = score;
     }
 
+    /**
+     * Getter method for the currentWave.
+     * @return the currentWave.
+     */
     public int getCurrentWave() {
         return currentWave;
     }
 
-    public void setCurrentWave(int currentWave) {
-        this.currentWave = currentWave;
-    }
-
+    /**
+     * Getter method for the towerList.
+     * @return the towerList.
+     */
     public List<Tower> getTowers() {
         return towers;
     }
 
-    public void setTowers(List<Tower> towers) {
-        this.towers = towers;
-    }
-
-    public void setWave(Wave wave) {
-        this.wave = wave;
-    }
-
+    /**
+     * Setter method for the gold.
+     * @param gold the new gold.
+     */
     public void setGold(int gold) {
         this.gold = gold;
     }
 
+    /**
+     * Getter method for the wave.
+     * @return the wave.
+     */
     public Wave getWave() {
         return wave;
     }

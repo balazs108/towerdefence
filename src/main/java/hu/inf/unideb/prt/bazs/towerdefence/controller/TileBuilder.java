@@ -87,6 +87,10 @@ public class TileBuilder {
         return this;
     }
 
+    /**
+     * Builder method that converts the tilebuilder into a tile.
+     * @return the tile.
+     */
     public boolean[][] build() {
         logger.info("The tile matrix is built.");
         return this.tiles;

@@ -5,34 +5,46 @@ import java.time.LocalDateTime;
 
 
 /**
- * Created by Balazs on 2017-05-21.
+ *  The entity object for the records in the highscore table.
  */
 @Entity
 public class HighScoreEntity {
+    /**
+     * The ID of the Highscore.
+     */
     @Id
     @Column(name = "id")
     @SequenceGenerator(name = "IdGenerator", sequenceName = "hssequence", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "IdGenerator")
     private long id;
+    /**
+     * The name of the player.
+     */
     @Column(name = "Player")
     private String player;
+    /**
+     * The score the player.
+     */
     @Column(name = "Score")
     private int score;
+    /**
+     * The moment when the score was registered.
+     */
     @Column(name = "Date")
     private LocalDateTime date;
 
     /**
-     *
+     * Empty constructor.
      */
     public HighScoreEntity() {
         super();
     }
 
     /**
-     *
-     * @param player
-     * @param score
-     * @param date
+     *Constructor for the entity.
+     * @param player the name that will be set.
+     * @param score the score that will be set.
+     * @param date the date that will be set.
      */
     public HighScoreEntity(String player, int score , LocalDateTime date) {
         super();
@@ -41,44 +53,20 @@ public class HighScoreEntity {
         this.date = date;
     }
 
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getPlayer() {
-        return player;
-    }
-
-    public void setPlayer(String player) {
-        this.player = player;
-    }
-
+    /**
+     * Getter method for the score.
+     * @return the score.
+     */
     public int getScore() {
         return score;
     }
 
+    /**
+     * Setter method for the score.
+     * @param score the new score.
+     */
     public void setScore(int score) {
         this.score = score;
     }
 
-    public LocalDateTime getDate() {
-        return date;
-    }
-
-    public void setDate(LocalDateTime date) {
-        this.date = date;
-    }
-
-    @Override
-    public String toString() {
-        return "HighScoreEntity{" +
-                "player='" + player + '\'' +
-                ", score=" + score +
-                ", date=" + date +
-                '}';
-    }
 }
