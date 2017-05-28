@@ -102,7 +102,6 @@ public class Game {
                     .findFirst().orElse(null)
             );
             t.shoot();
-            logger.info("A tower has shot.");
         });
     }
 
