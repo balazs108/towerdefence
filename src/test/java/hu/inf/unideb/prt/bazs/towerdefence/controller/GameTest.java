@@ -68,4 +68,32 @@ public class GameTest {
         Assert.assertEquals(MobType.MEDIUM,test.getWave().getMobList().get(0));
     }
 
+    @Test
+    public void summonMobTest() {
+        Game test = new Game();
+        test.loadWave();
+        Assert.assertEquals(0,test.getMobs().size());
+        test.summonMob();
+        Assert.assertEquals(1,test.getMobs().size());
+    }
+    @Test
+    public void tickTest() {
+        Game test = new Game();
+        Wave testWave = new Wave();
+        test.getField().setRoad(new RoadBuilder(0,0).down(1).right(1).up(1).left(1).build());
+        testWave = (WaveFactory.createWave(0,0,5,0));
+        test.tick();
+        Assert.assertEquals(1,test.getMobs().size());
+        Assert.assertEquals(0,test.getCurrentWave());
+        Assert.assertEquals(0,test.getTowers().size());
+        Assert.assertEquals(true, testWave.getMobList().equals(test.getWave().getMobList()));
+        test.putTower(TowerType.Normal,64,64);
+        while (test.getMobs().size()>0) {
+            test.tick();
+        }
+        Assert.assertEquals(test.getLife(),0);
+        Assert.assertEquals(false,test.getTowers().get(0).isShooting());
+
+    }
+
 }

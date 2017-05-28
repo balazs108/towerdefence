@@ -6,7 +6,7 @@
     <developers>
         <developer>
             <id>balazs108</id>
-            <name>Kovács-Fazekas Balázs</name>
+            <name>Balázs Kovács-Fazekas</name>
             <email>balzs108@yahoo.com</email>
             <roles>
                 <role>Developer</role>
@@ -109,11 +109,6 @@
                         </reports>
                     </reportSet>
                 </reportSets>
-            </plugin>
-            <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.7.9</version>
             </plugin>
         </plugins>
     </reporting>
