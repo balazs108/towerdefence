@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Created by Balazs on 2017-05-10.
- * This class is responsible for making a list of nodes which is the road itself
+ * This class is responsible for making a list of nodes which is the {@link Road} itself
  */
 public class RoadBuilder {
     /**

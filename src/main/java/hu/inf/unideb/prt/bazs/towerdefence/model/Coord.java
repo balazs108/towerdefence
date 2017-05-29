@@ -1,7 +1,7 @@
 package hu.inf.unideb.prt.bazs.towerdefence.model;
 
 /**
- * Class that is used in the road, it represents a coordinate.
+ * Class that is used in the {@link Road}, it represents a coordinate.
  */
 public class Coord {
     /**

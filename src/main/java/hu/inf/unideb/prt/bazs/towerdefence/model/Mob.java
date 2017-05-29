@@ -3,7 +3,7 @@ package hu.inf.unideb.prt.bazs.towerdefence.model;
 import java.util.ListIterator;
 
 /**
- * A class for the mob objects, they will move on a preset Road from the starting point to the finish point.
+ * A class for the mob objects, they will move on a preset {@link Road} from the starting point to the finish point.
  */
 public class Mob {
     /**

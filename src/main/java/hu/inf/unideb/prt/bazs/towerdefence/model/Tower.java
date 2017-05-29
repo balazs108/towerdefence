@@ -1,7 +1,7 @@
 package hu.inf.unideb.prt.bazs.towerdefence.model;
 
 /**
- * Tower class, these are objects that can be placed on the field, and will try to "kill" mobs near them.
+ * Tower class, these are objects that can be placed on the {@link Field}, and will try to "kill" {@link Mob}s near them.
  */
 public class Tower {
     /**

@@ -1,7 +1,7 @@
 package hu.inf.unideb.prt.bazs.towerdefence.model;
 
 /**
- * Enum of the Tower types.
+ * Enum of the {@link Tower} types.
  */
 public enum TowerType {
     /**

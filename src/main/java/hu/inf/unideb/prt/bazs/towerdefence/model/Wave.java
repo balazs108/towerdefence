@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * A wave class.
+ * A wave class, used to store the {@link Mob}s used in the {@link hu.inf.unideb.prt.bazs.towerdefence.controller.Game}.
  */
 public class Wave {
     /**

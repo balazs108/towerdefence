@@ -4,7 +4,7 @@ import hu.inf.unideb.prt.bazs.towerdefence.controller.RoadBuilder;
 import hu.inf.unideb.prt.bazs.towerdefence.controller.TileBuilder;
 
 /**
- *A class used in the Game, it contains a road and a tile matrix.
+ *A class used in the {@link hu.inf.unideb.prt.bazs.towerdefence.controller.Game}, it contains a {@link Road} and a tile matrix.
  */
 public class Field {
     /**

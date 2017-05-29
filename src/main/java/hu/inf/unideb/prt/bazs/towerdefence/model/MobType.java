@@ -1,7 +1,7 @@
 package hu.inf.unideb.prt.bazs.towerdefence.model;
 
 /**
- * Enum of mob types.
+ * Enum of {@link Mob} types.
  */
 public enum MobType {
     /**

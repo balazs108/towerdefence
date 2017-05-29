@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
  */
 public class Game {
     /**
-     *The class that defines the path for the mobs and the area which can be used by towers.
+     *The class that defines the path for the {@link Mob} and the area which can be used by {@link Tower}.
      */
     private Field field;
     /**
@@ -26,7 +26,7 @@ public class Game {
      */
     private List<Wave> waves;
     /**
-     * A singe wave object for the current wave.
+     * A singe {@link Wave} object for the current wave.
      */
     private Wave wave;
     /**

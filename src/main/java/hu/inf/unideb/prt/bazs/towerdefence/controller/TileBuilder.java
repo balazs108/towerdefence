@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Created by Balazs on 2017-05-21.
- * This class is similar to the RoadBuilder class, it initializes a 10X10 grid that covers the field.
+ * This class is similar to the {@link RoadBuilder} class, it initializes a 10X10 grid that covers the field.
  * This grid shows which tiles are available for the towers, the builder class is needed so the path of the
  * road can be followed easily thus making it off limits for the towers its easy
  */
