@@ -1,3 +1,4 @@
+//CHECKSTYLE:OFF
 package hu.inf.unideb.prt.bazs.towerdefence.controller;
 
 import hu.inf.unideb.prt.bazs.towerdefence.model.Field;

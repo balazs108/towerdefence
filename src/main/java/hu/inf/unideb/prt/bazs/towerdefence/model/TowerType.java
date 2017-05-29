@@ -4,8 +4,17 @@ package hu.inf.unideb.prt.bazs.towerdefence.model;
  * Enum of the Tower types.
  */
 public enum TowerType {
+    /**
+     * Normal tower type, average stats.
+     */
     Normal(96,10,10,25),
+	/**
+	* Fast tower type, low damage but it has an extreemly high fire rate.
+	*/
     Fast(64,2,1,30),
+	/**
+	* Chaos tower type, high damage, long range but low fire rate.
+	*/
     Chaos(128,20,20,30);
     /**
      * The range of the tower type.

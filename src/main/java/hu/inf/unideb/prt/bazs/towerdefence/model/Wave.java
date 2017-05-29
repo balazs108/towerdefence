@@ -30,7 +30,7 @@ public class Wave {
     }
 
     /**
-     * Getter method for the mobtype list
+     * Getter method for the mobtype list.
      * @return the mobtype list.
      */
     public List<MobType> getMobList() {

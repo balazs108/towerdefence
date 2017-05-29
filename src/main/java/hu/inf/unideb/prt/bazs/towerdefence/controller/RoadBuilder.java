@@ -10,11 +10,9 @@ import org.slf4j.LoggerFactory;
  */
 public class RoadBuilder {
     /**
-     * A Road variable in which the road will be built up
+     * A Road variable in which the road will be built up.
      */
     private Road road;
-
-    private Logger logger = LoggerFactory.getLogger(RoadBuilder.class);
 
     /**
      * Starts the construction of the list by making the first link.
@@ -27,7 +25,7 @@ public class RoadBuilder {
     }
 
     /**
-     * This method creates a new node "higher" then its parent
+     * This method creates a new node "higher" then its parent.
      * @param unit the number of tiles between the previous node and the new one. (32x32 pixels is a tile)
      * @return returns a roadbuilder so the methods can be linked up, making the building process easy and comapct.
      */
@@ -39,7 +37,7 @@ public class RoadBuilder {
         return this;
     }
     /**
-     * This method creates a new node "lower" then its parent
+     * This method creates a new node "lower" then its parent.
      * @param unit the number of tiles between the previous node and the new one. (32x32 pixels is a tile)
      * @return returns a roadbuilder so the methods can be linked up, making the building process easy and comapct.
      */
@@ -51,7 +49,7 @@ public class RoadBuilder {
         return this;
     }
     /**
-     * This method creates a new node to the "left" of its parent
+     * This method creates a new node to the "left" of its parent.
      * @param unit the number of tiles between the previous node and the new one. (32x32 pixels is a tile)
      * @return returns a roadbuilder so the methods can be linked up, making the building process easy and comapct.
      */
@@ -63,7 +61,7 @@ public class RoadBuilder {
         return this;
     }
     /**
-     * This method creates a new node to the "right" of  its parent
+     * This method creates a new node to the "right" of  its parent.
      * @param unit the number of tiles between the previous node and the new one. (32x32 pixels is a tile)
      * @return returns a roadbuilder so the methods can be linked up, making the building process easy and comapct.
      */
@@ -80,6 +78,7 @@ public class RoadBuilder {
      * @return the road.
      */
     public Road build() {
+        Logger logger = LoggerFactory.getLogger(RoadBuilder.class);
         logger.info("The road is finished.");
         return road;
     }

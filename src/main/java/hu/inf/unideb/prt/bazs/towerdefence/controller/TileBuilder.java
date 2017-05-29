@@ -10,22 +10,21 @@ import org.slf4j.LoggerFactory;
  * road can be followed easily thus making it off limits for the towers its easy
  */
 public class TileBuilder {
-    private Logger logger = LoggerFactory.getLogger(TileBuilder.class);
     /**
-     * A matrix made out of booleans that shows which tiles are available for the towers
+     * A matrix made out of booleans that shows which tiles are available for the towers.
      */
     private boolean[][] tiles;
     /**
-     * The current x coordinate of the builder
+     * The current x coordinate of the builder.
      */
     private int x;
     /**
-     * The current y coordinate of the builder
+     * The current y coordinate of the builder.
      */
     private int y;
 
     /**
-     * The constructor that begins teh initialization process
+     * The constructor that begins teh initialization process.
      * @param startX the x coordinate of the first tile
      * @param startY the y coordinate of the first tile
      * It sets the current value of the matrix to true which means the tile is not available for towers
@@ -92,6 +91,7 @@ public class TileBuilder {
      * @return the tile.
      */
     public boolean[][] build() {
+        Logger logger = LoggerFactory.getLogger(TileBuilder.class);
         logger.info("The tile matrix is built.");
         return this.tiles;
     }

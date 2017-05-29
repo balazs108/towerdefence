@@ -1,3 +1,4 @@
+//CHECKSTYLE:OFF
 package hu.inf.unideb.prt.bazs.towerdefence.controller;
 
 import hu.inf.unideb.prt.bazs.towerdefence.model.Coord;
@@ -7,9 +8,6 @@ import org.junit.Test;
 
 import java.util.LinkedList;
 
-/**
- * Created by Balazs on 2017-05-26.
- */
 public class RoadBuilderTest {
 
     @Test

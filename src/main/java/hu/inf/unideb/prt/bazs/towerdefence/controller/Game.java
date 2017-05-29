@@ -30,7 +30,7 @@ public class Game {
      */
     private Wave wave;
     /**
-     * List of towers that are on the field;
+     * List of towers that are on the field.
      */
     private List<Tower> towers;
     /**

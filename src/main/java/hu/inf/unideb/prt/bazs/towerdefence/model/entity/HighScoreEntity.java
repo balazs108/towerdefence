@@ -69,4 +69,34 @@ public class HighScoreEntity {
         this.score = score;
     }
 
+    /**
+     * Getter method for the player.
+     * @return the player.
+     */
+    public String getPlayer() {
+        return player;
+    }
+
+    /**
+     * Setter method for the player.
+     * @param player the new player.
+     */
+    public void setPlayer(String player) {
+        this.player = player;
+    }
+    /**
+     * Getter method for the date.
+     * @return the date.
+     */
+    public LocalDateTime getDate() {
+        return date;
+    }
+
+    /**
+     * Setter method for the date.
+     * @param date the new date.
+     */
+    public void setDate(LocalDateTime date) {
+        this.date = date;
+    }
 }

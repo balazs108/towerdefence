@@ -1,3 +1,4 @@
+//CHECKSTYLE:OFF
 package hu.inf.unideb.prt.bazs.towerdefence.controller;
 
 import hu.inf.unideb.prt.bazs.towerdefence.model.MobType;
@@ -9,9 +10,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * Created by Balazs on 2017-05-26.
- */
 public class WaveFactoryTest {
     @Test
     public void WaveFactoryTest(){

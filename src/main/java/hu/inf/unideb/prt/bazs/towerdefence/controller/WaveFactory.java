@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
  */
 public class WaveFactory {
     /**
-     * This method creates a wave, with the defined number of mobs
+     * This method creates a wave, with the defined number of mobs.
      * @param boss defines how many boss type mobs will be in the wave
      * @param heavy defines how many heavy type mobs will be in the wave
      * @param medium defines how many medium type mobs will be in the wave

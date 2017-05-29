@@ -51,8 +51,8 @@ public class Mob {
     }
 
     /**
-     * This method moves all mob objects on the field, if they reach their current goal then their goal will be changed
-     * to the next node. If that's not possible then they have reached their goal thus the reachGoal boolean will be changed
+     * This method moves all mob objects on the field, if they reach their current goal then their goal will be changed.
+     * The next node. If that's not possible then they have reached their goal thus the reachGoal boolean will be changed
      * to true.
      */
     public void move() {

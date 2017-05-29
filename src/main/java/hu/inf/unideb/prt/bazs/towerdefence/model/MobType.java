@@ -4,9 +4,21 @@ package hu.inf.unideb.prt.bazs.towerdefence.model;
  * Enum of mob types.
  */
 public enum MobType {
+    /**
+     * Boss type, strongest but also the slowest type.
+     */
     BOSS(400,2,50),
+    /**
+     * Heavy type, weaker then a boss type, but in great number a fore to recon with.
+     */
     HEAVY(100,3,10),
+    /**
+     * Medium type, the most common mobtype.
+     */
     MEDIUM(50,4,4),
+    /**
+     * Light type, they are exceptionally weak but very fest.
+     */
     LIGHT(30,5,1);
     /**
      * The health of a mobtype.
