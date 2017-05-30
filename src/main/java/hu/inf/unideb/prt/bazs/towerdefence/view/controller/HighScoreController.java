@@ -1,3 +1,4 @@
+//CHECKSTYLE:OFF
 package hu.inf.unideb.prt.bazs.towerdefence.view.controller;
 
 /*-

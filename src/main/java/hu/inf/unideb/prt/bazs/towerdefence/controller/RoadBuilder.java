@@ -31,7 +31,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * This class is responsible for making a list of nodes which is the {@link Road} itself
+ * This class is responsible for making a list of nodes which is the {@link Road} itself.
  */
 public class RoadBuilder {
     /**

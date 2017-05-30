@@ -1,3 +1,4 @@
+//CHECKSTYLE:OFF
 package hu.inf.unideb.prt.bazs.towerdefence.view.controller;
 
 /*-
@@ -242,6 +243,7 @@ public class GameController implements Initializable {
         renderShooting();
     }
 
+    @Override
     public void initialize(URL location, ResourceBundle resources) {
         game = new Game();
         back = new Image("IMG/field.png");
