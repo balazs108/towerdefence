@@ -241,7 +241,7 @@ public class GameController implements Initializable {
         renderLabels();
         renderShooting();
     }
-
+    @Override
     public void initialize(URL location, ResourceBundle resources) {
         game = new Game();
         back = new Image("IMG/field.png");
